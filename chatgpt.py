@@ -1,11 +1,19 @@
 import openai
 import os
 
-os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
+print("\033[92m" + " ______     __  __     ______     ______   ______     ______     __  __     ______    " + "\033[0m")
+print("\033[92m" + "/\  ___\   /\ \_\ \   /\  __ \   /\__  _\ /\  ___\   /\  __ \   /\ \/ /    /\  ___\   " + "\033[0m")
+print("\033[92m" + "\ \ \____  \ \  __ \  \ \  __ \  \/_/\ \/ \ \ \____  \ \  __ \  \ \  _\"-.  \ \  __\   " + "\033[0m")
+print("\033[92m" + " \ \_____\  \ \_\ \_\  \ \_\ \_\    \ \_\  \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\\ " + "\033[0m")
+print("\033[92m" + "  \/_/____/  \/_/\/_/   \/_/\/_/     \/_/   \/_____/   \/_/\/_/   \/_/\/_/   \/_____/ " + "\033[0m")
+print("\033[91m" + "                                  Created by t4ps3c"+ "\033[0m")
+print("")
+
+os.environ["OPENAI_API_KEY"] = "YOUR-API-KEY"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 while True:
-    user_msg = input("You: ")
+    user_msg = input("\033[94m" +"You: "+"\033[0m")
     if user_msg.lower() in ["exit", "quit"]:
         break
     completion = openai.ChatCompletion.create(
@@ -16,6 +24,6 @@ while True:
   	{"role": "user", "content" : user_msg }]
         )
 
-    print("chatgpt: " + completion["choices"][0]["message"]["content"])
+    print("\033[38;5;208m" +"ChatCake: "+"\033[0m" + completion["choices"][0]["message"]["content"])
     print("")
     print("")
