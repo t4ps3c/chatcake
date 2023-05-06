@@ -1,4 +1,4 @@
-# terminal-chatgpt
+# ChatCake
 
 This code uses OpenAI's GPT-3.5 language model to create a chatbot that can answer user questions and engage in conversation. 
 
