@@ -26,4 +26,4 @@ while True:
 
     print("\033[38;5;208m" +"ChatCake: "+"\033[0m" + completion["choices"][0]["message"]["content"])
     print("")
-    print("")
+  
