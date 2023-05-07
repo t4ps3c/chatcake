@@ -9,8 +9,7 @@ print("\033[92m" + "  \/_/____/  \/_/\/_/   \/_/\/_/     \/_/   \/_____/   \/_/\
 print("\033[91m" + "                                  Created by t4ps3c"+ "\033[0m")
 print("")
 
-os.environ["OPENAI_API_KEY"] = "YOUR-API-KEY"
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = os.getenv=("OPENAI_API_KEY")
 
 while True:
     user_msg = input("\033[94m" +"You: "+"\033[0m")
