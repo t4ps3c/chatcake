@@ -4,7 +4,7 @@ This code uses OpenAI's GPT-3.5 language model to create a chatbot that can answ
 
 ## Prerequisites
 
-To use this code, you need to have an OpenAI API key. You can obtain an API key by signing up for OpenAI's GPT-3 beta program. Once you have an API key, replace "YOUR_API_KEY" in the code with your actual API key.
+To use this code, you need to have an OpenAI API key. You can obtain an API key by signing up for OpenAI's GPT-3 beta program. Once you have an API key, replace "OPENAI_API_KEY" in the code with your actual API key.
 
 ## How to use
 
